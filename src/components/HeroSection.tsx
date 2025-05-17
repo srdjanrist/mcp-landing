@@ -1,7 +1,7 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { BriefcaseBusiness, ChartBarIcon, Book, Bulb } from "lucide-react";
+import { BriefcaseBusiness, ChartBarIcon, Book, LightbulbIcon } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -51,7 +51,7 @@ const HeroSection = () => {
           
           <div className="flex flex-col items-center text-center p-6">
             <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mb-4">
-              <Bulb className="w-6 h-6 text-primary" />
+              <LightbulbIcon className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Actionable Insights</h3>
             <p className="text-slate-600">Clear recommendations based on data, not guesswork.</p>
