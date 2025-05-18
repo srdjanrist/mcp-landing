@@ -2,8 +2,10 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { BriefcaseBusiness, ChartBarIcon, Book, LightbulbIcon } from "lucide-react";
+import { useNavigate} from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="pt-32 pb-20 md:pt-40 md:pb-28">
       <div className="container mx-auto px-4">
@@ -23,7 +25,7 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg">
+            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg" onPress={() => { navigate("https://team-spark-onboard-ai.vercel.app/") } }>
               Start Free Trial
             </Button>
             <Button variant="outline" className="px-8 py-6 text-lg">
